@@ -1,5 +1,7 @@
 package com.igorgoose.leetcode.java.hard;
 
+import java.util.Arrays;
+
 /*
 2407. Longest Increasing Subsequence II
 You are given an integer array nums and an integer k.
@@ -12,14 +14,13 @@ Return the length of the longest subsequence that meets the requirements.
 
 A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
 
-
-
 */
 public class LongestIncreasingSubsequence2 {
 
     public int lengthOfLIS(int[] nums, int k) {
         int maxLen = 0;
         int[] m = new int[nums.length + 1];
+        Arrays.asList(m);
 
         for (int i = 0; i < nums.length; i++) {
             int lo = 1;
