@@ -1,7 +1,9 @@
 package com.igorgoose.leetcode.java.medium;
 
-import javax.swing.tree.TreeNode;
+import com.igorgoose.leetcode.java.input.TreeNode;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -66,7 +68,6 @@ public class ClosesNodesQueries {
                 result[0] = Math.max(midValue, result[0]);
             }
             l = mid + 1;
-            continue;
         }
 
         return Arrays.asList(result);
